@@ -24,6 +24,8 @@ public class Main {
         cats.removeIf(cat -> cat.getColor().equals(Cat.Color.SILVER));
         Printer.print(cats);
 
+        cats.removeIf(cat -> 5 < cat.getName().length());
+        Printer.print(cats);
     }
 
 
