@@ -18,6 +18,9 @@ public class Main {
         cats.sort(Cat::byName);
         Printer.print(cats);
 
+        cats.sort((x, y) -> Integer.compare(x.getAge(), y.getAge()));
+        Printer.print(cats);
+
     }
 
 
