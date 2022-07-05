@@ -21,6 +21,9 @@ public class Main {
         cats.sort((x, y) -> Integer.compare(x.getAge(), y.getAge()));
         Printer.print(cats);
 
+        cats.removeIf(cat -> cat.getColor().equals(Cat.Color.SILVER));
+        Printer.print(cats);
+
     }
 
 
