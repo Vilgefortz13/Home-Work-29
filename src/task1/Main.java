@@ -15,6 +15,8 @@ public class Main {
         cats.sort(Cat::byBreed);
         Printer.print(cats);
 
+        cats.sort(Cat::byName);
+        Printer.print(cats);
 
     }
 

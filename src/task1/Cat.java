@@ -63,5 +63,9 @@ final class Cat {
         return c1.breed.toString().compareTo(c2.breed.toString());
     }
 
+    public static int byName(Cat c1, Cat c2) {
+        return c1.name.compareTo(c2.name);
+    }
+
     /*********/
 }
